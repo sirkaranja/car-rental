@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-     <h1>CarHire system</h1>
+     <h1>Carhire system</h1>
         
     </>
   )
