@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app= Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite://carhire.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///carhire.db'
 db= SQLAlchemy(app)
 
 
@@ -31,9 +31,9 @@ class Car(db.Model):
 class Booking(db.Model):
     __tablename__= 'bookings'
     id= db.Column(db.Integer, primary_key=True)
-    user_id = db.column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    user_id = db.column(db.Integer, db.ForeignKey('users.id'))
     car_id= db.Column(db.Integer, db.ForeignKey('cars.id'), nullable= False)
-    start_date= db.COlumn(db.Date, nullable=False)
+    start_date= db.Column(db.Date, nullable=False)
     end_date= db.Column(db.Date, nullable=False)
     status = db.Column(db.Enum('Pending', 'Approved', 'Canceled'), nullable=False)
     created_at = db.Column(db.TIMESTAMP, nullable=False)
@@ -49,7 +49,7 @@ class Booking(db.Model):
 
 class Payment(db.Model):
     __tablename__='payments'
-    id= db.Column(db.Integer, nullable=False)
+    id= db.Column(db.Integer, primary_key=True)
     booking_id= db.Column(db.Integer, db.ForeignKey('bookings.id'), nullable=False)
     amount = db.Column(db.Numeric(10, 2), nullable=False)
     payment_date = db.Column(db.TIMESTAMP, nullable=False)
