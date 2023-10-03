@@ -89,8 +89,44 @@ def create_new_car():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+#get method for cars
+@app.route('/cars', methods=['GET'])
+def get_all_cars():
+    try:
+        cars = Car.query.all()
+        cars_list = []
 
+        for car in cars:
+            car_data = {
+                'id': car.id,
+                'brand': car.brand,
+                'model': car.model,
+                'transition': car.transition,
+                'seat_capacity': car.seat_capacity,
+                'speedometer': car.speedometer,
+                'image': car.image,
+            }
+            cars_list.append(car_data)
 
+        return jsonify({'cars': cars_list})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+#delete method for cars
+
+@app.route('/users/<int:car_id>', methods=['DELETE'])
+def delete_car(car_id):
+    try:
+        car = Car.query.get(car_id)
+        if not car:
+            return jsonify({'error': 'Car not found'}), 404
+        
+        db.session.delete(car)
+        db.session.commit()
+
+        return jsonify({'message': f"Car deleted successfully"}), 200
+    except Exception as e:
+        return jsonify({'error', str(e)}), 500
 
 
 
