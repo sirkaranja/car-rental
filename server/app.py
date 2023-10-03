@@ -35,6 +35,7 @@ def get_all_users():
             print (f"Error processing users list {user.id}: {e}")
     return jsonify(users_list)
 
+#method for adding new user
 @app.route('/users', methods=['POST'])
 def create_new_user():
     try:
