@@ -129,11 +129,64 @@ def delete_car(car_id):
         return jsonify({'error', str(e)}), 500
 
 
+#update method for cars details
+@app.route('/cars/<int:car_id>', methods=['PUT'])
+def update_car(car_id):
+    try:
+        data = request.get_json()
+        car = Car.query.get(car_id)
+
+        if not car:
+            return jsonify({'message': f'Car with ID {car_id} not found'}), 404
+
+        # Update car attributes based on the request data
+        car.brand = data.get('brand', car.brand)
+        car.model = data.get('model', car.model)
+        car.transition = data.get('transition', car.transition)
+        car.seat_capacity = data.get('seat_capacity', car.seat_capacity)
+        car.speedometer = data.get('speedometer', car.speedometer)
+        car.image = data.get('image', car.image)
+
+        db.session.commit()
+
+        return jsonify({'message': f'Car with ID {car_id} updated successfully'}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
 
+#post method for booking 
+@app.route('/bookings', methods=['POST'])
+def create_booking():
+    try:
+        data = request.get_json()
+        user_id = data.get('user_id')
+        car_id = data.get('car_id')
+        start_date = data.get('start_date')
+        end_date = data.get('end_date')
+        status = data.get('status')
 
+        # Check if the user and car exist
+        user = User.query.get(user_id)
+        car = Car.query.get(car_id)
 
+        if not user or not car:
+            return jsonify({'message': 'User or car not found'}), 404
+
+        new_booking = Booking(
+            user_id=user_id,
+            car_id=car_id,
+            start_date=start_date,
+            end_date=end_date,
+            status=status
+        )
+
+        db.session.add(new_booking)
+        db.session.commit()
+
+        return jsonify({'message': 'Booking created successfully', 'booking_id': new_booking.id}), 201
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
 
