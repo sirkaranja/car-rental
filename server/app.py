@@ -70,6 +70,30 @@ def delete_user(user_id):
     
 
 #method for adding new car
+@app.route('/cars', methods=['POST'])
+def create_new_car():
+    try:
+        data= request.get_json()
+        brand= data.get('brand')
+        model= data.get('model')
+        transition= data.get('transition')
+        seat_capacity= data.get('seat_capacity')
+        speedometer= data.get('speedometer')
+        image= data.get('image')
+
+        new_car= Car(brand=brand,model=model,transition=transition,seat_capacity=seat_capacity,speedometer=speedometer,image=image)
+        db.session.add(new_car)
+        db.session.commit()
+
+        return jsonify({'message': 'Car added successfully'}), 201
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+
+
+
+
 
 
 
