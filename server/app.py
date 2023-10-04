@@ -187,8 +187,50 @@ def create_booking():
         return jsonify({'message': 'Booking created successfully', 'booking_id': new_booking.id}), 201
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+    
+
+@app.route('/bookings', methods=['GET'])
+def get_all_bookings():
+    try:
+        bookings = Booking.query.all()
+        booking_list = []
+
+        for booking in bookings:
+            booking_data = {
+                'id': booking.id,
+                'user_id': booking.user_id,
+                'car_id': booking.car_id,
+                'start_date': booking.start_date.strftime('%Y-%m-%d %H:%M:%S'),  
+                'end_date': booking.end_date.strftime('%Y-%m-%d %H:%M:%S'), 
+                'status': booking.status,
+                'created_at': booking.created_at.strftime('%Y-%m-%d %H:%M:%S'),  
+                'updated_at': booking.updated_at.strftime('%Y-%m-%d %H:%M:%S'),
+            }
+            booking_list.append(booking_data)
+
+        return jsonify(booking_list), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
+
+
+
+
+
+#delete method for booking
+@app.route('/bookings/<int:booking_id>', methods=['DELETE'])
+def delete_booking(booking_id):
+    try:
+        booking= Booking.query.get(booking_id)
+        if not booking:
+            return jsonify({'error': 'Booking not found'}), 404
+        db.session.delete(booking)
+        db.session.commit()
+
+        return jsonify({'message': f'Booking deleted successfully'}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
 
