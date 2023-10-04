@@ -187,8 +187,27 @@ def create_booking():
         return jsonify({'message': 'Booking created successfully', 'booking_id': new_booking.id}), 201
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+    
 
 
+
+
+
+
+
+#delete method for booking
+@app.route('/bookings/<int:booking_id>', methods=['DELETE'])
+def delete_booking(booking_id):
+    try:
+        booking= Booking.query.get(booking_id)
+        if not booking:
+            return jsonify({'error': 'Booking not found'}), 404
+        db.session.delete(booking)
+        db.session.commit()
+
+        return jsonify({'message': f'Booking deleted successfully'}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
 
