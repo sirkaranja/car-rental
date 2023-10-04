@@ -189,6 +189,29 @@ def create_booking():
         return jsonify({'error': str(e)}), 500
     
 
+@app.route('/bookings', methods=['GET'])
+def get_all_bookings():
+    try:
+        bookings = Booking.query.all()
+        booking_list = []
+
+        for booking in bookings:
+            booking_data = {
+                'id': booking.id,
+                'user_id': booking.user_id,
+                'car_id': booking.car_id,
+                'start_date': booking.start_date.strftime('%Y-%m-%d %H:%M:%S'),  
+                'end_date': booking.end_date.strftime('%Y-%m-%d %H:%M:%S'), 
+                'status': booking.status,
+                'created_at': booking.created_at.strftime('%Y-%m-%d %H:%M:%S'),  
+                'updated_at': booking.updated_at.strftime('%Y-%m-%d %H:%M:%S'),
+            }
+            booking_list.append(booking_data)
+
+        return jsonify(booking_list), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 
 
 
