@@ -7,10 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-     <h1>Carhire system</h1>
-        
-    </>
+<h3>CH Carhire System</h3>
   )
 }
 
