@@ -3,13 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import NavbaMain from '../src/Components/Navbar/Navbar'
 import Coursel from '../src/Components/Coursel/coursel'
+import SearchBar from '../src/Components/SearchBar/searchbar'
 
 function App() {
 
 
   return (
     <><NavbaMain />
-    <Coursel /></>
+    <Coursel />
+    < SearchBar />
+    
+    </>
 
   )
 }
