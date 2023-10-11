@@ -1,0 +1,26 @@
+.main-desc {
+    display: flex; /* Use Flexbox to create a row layout */
+    align-items: center; /* Vertically center content within the container */
+  }
+  
+  .desc-img-container {
+    flex: 1; /* The image container takes up 50% of the available space */
+    padding: 20px; /* Add some spacing */
+  }
+  
+  .desc-img {
+    max-width: 100%; 
+    width: 685px;
+height: 486px;
+flex-shrink: 0;
+border-radius: 111px;
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;/* Ensure the image doesn't exceed its container's width */
+  }
+  
+  .text-container {
+    flex: 1; /* The text container takes up 50% of the available space */
+    padding: 20px; /* Add some spacing */
+  }
+  
+  /* Add any other styles you need for your text */
+  
