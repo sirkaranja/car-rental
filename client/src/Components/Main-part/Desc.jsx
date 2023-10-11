@@ -11,9 +11,13 @@ function Desc() {
       <div className='text-container'>
         <h3>The World’s largest <br></br> Car Sharing Market</h3>
         <p>Find the right car to conquer the great outdoors</p>
+        <div className='browse-more'>
+            Browse More
+            <span>→</span>
+          </div>
       </div>
     </div>
-    
+
   );
 }
 

@@ -1,11 +1,11 @@
 .main-desc {
-    display: flex; /* Use Flexbox to create a row layout */
-    align-items: center; /* Vertically center content within the container */
+    display: flex; 
+    align-items: center; 
   }
   
   .desc-img-container {
-    flex: 1; /* The image container takes up 50% of the available space */
-    padding: 20px; /* Add some spacing */
+    flex: 1;
+    padding: 20px; 
   }
   
   .desc-img {
@@ -14,13 +14,20 @@
 height: 486px;
 flex-shrink: 0;
 border-radius: 111px;
-background: url(<path-to-image>), lightgray 50% / cover no-repeat;/* Ensure the image doesn't exceed its container's width */
+background: url(<path-to-image>), lightgray 50% / cover no-repeat;
   }
   
   .text-container {
-    flex: 1; /* The text container takes up 50% of the available space */
-    padding: 20px; /* Add some spacing */
+    flex: 1; 
+    padding: 20px; 
   }
   
-  /* Add any other styles you need for your text */
+  .browse-more {
+    text-align: center;
+    margin-top: 20px;
+  }
   
+  .browse-more span {
+    font-size: 24px;
+    margin-left: 5px;
+  }
