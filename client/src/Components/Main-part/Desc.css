@@ -36,8 +36,27 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
   width: 273px;
   height: 320px;
   border-radius: 18.953px 18.953px 0px 0px;
+  box-shadow: 4px;
 }
 .img-card{
   border-radius: 18.953px 18.953px 0px 0px;
   
+}
+.card-display{
+  display: flex;
+  justify-content: space-between;
+
+  /* justify-content: space-between; */
+}
+.main-explainer{
+  display: flex; 
+  justify-content: center;
+}
+.explainer-img{
+  width: 200px;
+}
+.hire{
+height: 252px;
+background: #F1E1FF;
+background: color(display-p3 0.9347 0.8833 1);
 }
