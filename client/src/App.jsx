@@ -5,6 +5,7 @@ import NavbaMain from '../src/Components/Navbar/Navbar'
 import Coursel from '../src/Components/Coursel/coursel'
 import SearchBar from '../src/Components/SearchBar/searchbar'
 import Desc from '../src/Components/Main-part/Desc'
+import Footer from '../src/Components/Footer/Footer'
 function App() {
 
 
@@ -13,6 +14,8 @@ function App() {
     <Coursel />
     < SearchBar />
     < Desc />
+    < Footer />
+
     
     </>
 
