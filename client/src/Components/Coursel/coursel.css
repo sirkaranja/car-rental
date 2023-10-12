@@ -1,0 +1,16 @@
+.coursel{
+    height: 637px;
+    background: #44332C;
+}
+
+
+.main-coursel{
+color: #FFF;
+color: color(display-p3 1 1 1);
+font-family: Kantumruy;
+font-size: 55px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-top: 342px;
+}
