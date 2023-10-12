@@ -31,3 +31,13 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     font-size: 24px;
     margin-left: 5px;
   }
+
+.card{
+  width: 273px;
+  height: 320px;
+  border-radius: 18.953px 18.953px 0px 0px;
+}
+.img-card{
+  border-radius: 18.953px 18.953px 0px 0px;
+  
+}
