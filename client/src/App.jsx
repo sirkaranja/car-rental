@@ -6,14 +6,17 @@ import Coursel from '../src/Components/Coursel/coursel'
 import SearchBar from '../src/Components/SearchBar/searchbar'
 import Desc from '../src/Components/Main-part/Desc'
 import Footer from '../src/Components/Footer/Footer'
+import About from '../src/Components/About/about'
 function App() {
 
 
   return (
     <><NavbaMain />
     <Coursel />
-    < SearchBar />
-    < Desc />
+    {/* < SearchBar />
+    < Desc /> */}
+
+    < About/>
     < Footer />
 
     
