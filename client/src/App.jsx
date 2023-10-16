@@ -11,13 +11,14 @@ function App() {
 
 
   return (
-    <><NavbaMain />
-    <Coursel />
+    <>
+    {/* // <NavbaMain />
+    // <Coursel /> */}
     {/* < SearchBar />
     < Desc /> */}
 
     < About/>
-    < Footer />
+    {/* // < Footer /> */}
 
     
     </>
