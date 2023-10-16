@@ -1,0 +1,29 @@
+.mainpart{
+    height: 453px;
+    background: #43332B;
+background: color(display-p3 0.2542 0.2021 0.1747);
+}
+
+.header{
+    color: #ffffff;
+}
+.car-details{
+    text-align: end;
+}
+.more-cars{
+    height: 252px;
+    
+}
+   .img-more {
+    width: 100%;
+
+    }
+    button{
+    width: 182px;
+height: 60px;
+    border-radius: 50px;
+background: #43332B;
+background: color(display-p3 0.2542 0.2021 0.1747);
+box-shadow: 0px 10px 50px 0px rgba(62, 55, 251, 0.25);
+box-shadow: 0px 10px 50px 0px color(display-p3 0.2392 0.2157 0.9451 / 0.25);
+}
