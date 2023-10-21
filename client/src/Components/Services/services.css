@@ -1,0 +1,49 @@
+.header{
+    color: #FFF;
+    color: color(display-p3 1 1 1);
+    font-family: Fredoka One;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.serv-box{
+width: 422px;
+height: 375px;
+border-radius: 48px;
+background: #FFF;
+background: color(display-p3 1 1 1);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+box-shadow: 0px 4px 4px 0px color(display-p3 0 0 0 / 0.25);
+}
+
+img{
+    width: 103px;
+height: 103px;
+flex-shrink: 0;
+}
+
+p{
+    padding-top: 70px;
+    color: #000;
+color: color(display-p3 0 0 0);
+font-family: Gothic A1;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+h5{
+color: #000;
+color: color(display-p3 0 0 0);
+font-family: Fredoka One;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.box-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
