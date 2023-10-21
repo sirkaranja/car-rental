@@ -7,6 +7,9 @@ function Fleet() {
   
   return (
     <><NavbaMain />
+    <div className='header'>
+<h3>Our Fleet</h3>
+    </div>
     < Footer />
 
     </>
