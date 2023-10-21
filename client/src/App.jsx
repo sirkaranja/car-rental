@@ -8,6 +8,7 @@ import Desc from '../src/Components/Main-part/Desc'
 import Footer from '../src/Components/Footer/Footer'
 import About from '../src/Components/About/about'
 import Fleet from '../src/Components/Fleets/Fleet'
+import Services from '../src/Components/Services/services'
 function App() {
 
 
@@ -17,7 +18,8 @@ function App() {
     // <Coursel /> */}
     {/* < SearchBar />
     < Desc /> */}
-< Fleet />
+{/* < Fleet /> */}
+< Services />
     {/* < About/> */}
     {/* // < Footer /> */}
 
