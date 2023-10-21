@@ -7,6 +7,7 @@ import SearchBar from '../src/Components/SearchBar/searchbar'
 import Desc from '../src/Components/Main-part/Desc'
 import Footer from '../src/Components/Footer/Footer'
 import About from '../src/Components/About/about'
+import Fleet from '../src/Components/Fleets/Fleet'
 function App() {
 
 
@@ -16,8 +17,8 @@ function App() {
     // <Coursel /> */}
     {/* < SearchBar />
     < Desc /> */}
-
-    < About/>
+< Fleet />
+    {/* < About/> */}
     {/* // < Footer /> */}
 
     

@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Footer from '../Footer/Footer';
+import NavbaMain from '../Navbar/Navbar'
+import './fleet.css';
 
 function Fleet() {
+  
   return (
-    <div>Fleet</div>
-  )
+    <><NavbaMain />
+    < Footer />
+
+    </>
+  );
 }
 
-export default Fleet
+export default Fleet;
