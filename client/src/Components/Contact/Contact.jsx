@@ -22,6 +22,15 @@ function Contact() {
             <textarea name="" id="" cols="30" rows="10"></textarea>
             <button type="submit">Send Message</button>
         </form>
+<div>
+<h3>Contact Information</h3>
+        <p>Nairobi, Kenya</p><br/>
+<p>Email us at: <email>info@carhire.co.ke</email></p>
+<p>Call : 0798343427</p>
+<p>Follow us on our socials</p>
+</div>
+        
+      
 
     </div>
     < Footer />
