@@ -33,6 +33,9 @@ function Contact() {
       
 
     </div>
+    <div className='ftr'>
+
+    </div>
     < Footer />
     </>
   )
