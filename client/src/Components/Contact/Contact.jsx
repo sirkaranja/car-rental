@@ -7,7 +7,7 @@ function Contact() {
   return (
     <>
     < NavbaMain />
-    
+  {/* contact form */}
     <div className='header'>Contact</div>
     <div className='main-contact'>
         <form action="">
