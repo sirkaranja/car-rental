@@ -19,9 +19,9 @@ function App() {
     // <Coursel /> */}
     {/* < SearchBar />
     < Desc /> */}
-{/* < Fleet /> */}
+< Fleet />
 {/* < Services /> */}
-< Contact />
+{/* < Contact /> */}
     {/* < About/> */}
     {/* // < Footer /> */}
 
