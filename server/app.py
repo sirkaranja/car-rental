@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request
 from models import db, User, Booking, Car, Payment
 from flask_migrate import Migrate
+from flask_cors import CORS  
 
 app = Flask(__name__)
 
@@ -11,6 +12,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Initialize the database
 db.init_app(app)
 migrate = Migrate(app, db)
+CORS(app)
 
 
 @app.route('/')
