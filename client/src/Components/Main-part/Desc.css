@@ -33,7 +33,7 @@ background: url(<path-to-image>), lightgray 50% / cover no-repeat;
   }
 
 .card{
-  width: 273px;
+  width: 213px;
   height: 320px;
   border-radius: 18.953px 18.953px 0px 0px;
   border-radius: 18.953px;
@@ -111,4 +111,10 @@ align-self: center;
   font-family: Averia Sans Libre;
 font-size: 16px;
 }
-  
+#make{
+  color: #000;
+font-family: DM Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+}
