@@ -67,7 +67,8 @@ line-height: normal;
 }
 .main-explainer{
   display: flex; 
-  justify-content: center;
+ align-items: center;
+ padding-left: 150px;
 }
 .explaier h3{
   color: #000;
@@ -78,6 +79,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 padding-top: 200px;
+
 }
 .explainer-img{
   width: 570px;
@@ -93,4 +95,20 @@ align-self: flex-end;
 height: 252px;
 background: #F1E1FF;
 background: color(display-p3 0.9347 0.8833 1);
+align-self: center;
+
 }
+.main-hire{
+  align-items: center;
+  padding-left: 800px;
+}
+.main-hire h5{
+  font-family: Aclonica;
+  font-size: 20px;
+}
+
+.main-hire p{
+  font-family: Averia Sans Libre;
+font-size: 16px;
+}
+  
