@@ -19,7 +19,9 @@ function Desc() {
         </div>
       </div>
     </div>
+    <h5 id='make'>Browse by Make</h5>
     <div className='card-display'>
+   
     <div className='card' style={{ width: '18rem' }}>
         <img src={desc2} alt='' className='img-card' />
         <div className='card-body'>
@@ -65,6 +67,14 @@ Transfers, Wedding
       </div>
     </div>
     <div className='hire'>
+     <div className="main-hire">
+     <h5>Manage your car hire services 
+with the best 
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br /> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+</h5>
+<button type="button">Book Car</button>
+     </div>
+
 
     </div>
       </>
