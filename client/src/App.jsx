@@ -15,15 +15,15 @@ function App() {
 
   return (
     <>
-    {/* // <NavbaMain />
-    // <Coursel /> */}
-    {/* < SearchBar />
-    < Desc /> */}
-< Fleet />
+     <NavbaMain />
+    <Coursel />
+    < SearchBar />
+    < Desc />
+{/* < Fleet /> */}
 {/* < Services /> */}
 {/* < Contact /> */}
     {/* < About/> */}
-    {/* // < Footer /> */}
+    // < Footer />
 
     
     </>
