@@ -1,48 +1,51 @@
 import React, { useState } from 'react';
-import Popover from 'react-bootstrap/Popover';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Button from 'react-bootstrap/Button';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 function SearchBar() {
-  const [showPickupPopover, setShowPickupPopover] = useState(false);
-  const [showDropoffPopover, setShowDropoffPopover] = useState(false);
-
-  const pickupPopover = (
-    <Popover id="pickup-popover">
-      <Popover.Header as="h3">Pickup Date/Time</Popover.Header>
-      <Popover.Content>
-        <input type="datetime-local" />
-      </Popover.Content>
-    </Popover>
-  );
-
-  const dropoffPopover = (
-    <Popover id="dropoff-popover">
-      <Popover.Header as="h3">Dropoff Date/Time</Popover.Header>
-      <Popover.Content>
-        <input type="datetime-local" />
-      </Popover.Content>
-    </Popover>
-  );
+  const [whereTo, setWhereTo] = useState('');
+  const [pickUpDate, setPickUpDate] = useState(null);
+  const [dropOffDate, setDropOffDate] = useState(null);
 
   return (
-    <div className="container mt-4">
-      <div className="row">
-        <div className="col-md-3">
-          <input type="text" className="form-control" placeholder="Where to" />
-        </div>
-        <div className="col-md-3">
-          <input type="datetime-local" className="form-control" placeholder="Drop off" />
-        </div>
-        <div className="col-md-3">
-          
-        </div>
-        <div className="col-md-3">
-        <input type="datetime-local" className="form-control"  placeholder="Pick up"  />
-          <button className="btn btn-primary ml-2">Search</button>
+    <section id="hero">
+      <div className="container">
+        <div className="searchwrapper">
+          <div className="searchbox">
+            <div className="row">
+              <div className="col-md-5">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Where to"
+                  value={whereTo}
+                  onChange={(e) => setWhereTo(e.target.value)}
+                />
+              </div>
+              <div className="col-md-3">
+                <DatePicker
+                  selected={pickUpDate}
+                  onChange={(date) => setPickUpDate(date)}
+                  placeholderText="PickUp"
+                  className="form-control"
+                />
+              </div>
+              <div className="col-md-3">
+                <DatePicker
+                  selected={dropOffDate}
+                  onChange={(date) => setDropOffDate(date)}
+                  placeholderText="Drop Off"
+                  className="form-control"
+                />
+              </div>
+              <div className="col-md-1">
+                <input type="button" className="btn btn-primary form-control" value="Search" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
