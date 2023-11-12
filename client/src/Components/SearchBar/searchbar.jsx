@@ -7,6 +7,8 @@ function SearchBar() {
   const [pickUpDate, setPickUpDate] = useState(null);
   const [dropOffDate, setDropOffDate] = useState(null);
 
+  
+
   return (
     <section id="hero">
       <div className="container">
