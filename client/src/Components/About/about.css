@@ -17,8 +17,8 @@ background: color(display-p3 0.2542 0.2021 0.1747);
 
 .tag {
     position: absolute;
-    top: 500px; /* Adjust this value to move the tag higher or lower */
-    left: 30px; /* Adjust this value to align the tag horizontally */
+    top: 500px; 
+    left: 30px; 
     width: 209px;
     height: 136px;
     flex-shrink: 0;
