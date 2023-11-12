@@ -4,6 +4,7 @@ import NavbaMain from '../Navbar/Navbar'
 import './about.css'
 import ford from '../../assets/frd.png'
 import more from '../../assets/more.png'
+import tag from '../../assets/tag.png'
 
 function About() {
   return (
@@ -18,6 +19,7 @@ function About() {
       </div>
 <div>
         <img src={ford} alt="" className='ford' srcset="" />
+        <img src={tag} className="tag" alt="" srcset="" />
         <p>A Ford Ranger rental comes with a high-strength steel frame for<br/>
  extra durability and exceptional gas mileage for its class.</p>
  <div className='car-details'>

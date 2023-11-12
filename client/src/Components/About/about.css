@@ -12,7 +12,20 @@ background: color(display-p3 0.2542 0.2021 0.1747);
 .ford{
     width: auto;
     height: fit-content;
+    padding-left: 140px;
 }
+
+.tag {
+    position: absolute;
+    top: 500px; /* Adjust this value to move the tag higher or lower */
+    left: 30px; /* Adjust this value to align the tag horizontally */
+    width: 209px;
+    height: 136px;
+    flex-shrink: 0;
+    align-items: flex-start;
+    size: 70%;
+}
+
 .car-details{
     text-align: end;
 }
@@ -24,3 +37,4 @@ background: color(display-p3 0.2542 0.2021 0.1747);
     width: 100%;
 
     }
+
