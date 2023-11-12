@@ -16,8 +16,8 @@ function About() {
         About
       </div>
       </div>
-      <div>
-        <img src={ford} alt="" srcset="" />
+<div>
+        <img src={ford} alt="" className='ford' srcset="" />
         <p>A Ford Ranger rental comes with a high-strength steel frame for<br/>
  extra durability and exceptional gas mileage for its class.</p>
  <div className='car-details'>
