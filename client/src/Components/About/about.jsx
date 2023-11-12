@@ -24,6 +24,13 @@ function About() {
  extra durability and exceptional gas mileage for its class.</p>
  <div className='car-details'>
   <h3>Details</h3>
+  <div className='details-info'>
+        <h3>Model: Ford Ranger</h3>
+        <p>Seats Capacity: 5</p>
+        <p>Transmission: Automatic</p>
+        <p>Engine Capacity: [Capacity]</p>
+        <p>Speedometer: [Speed]</p>
+    </div>
  </div>
  <div className='more-cars'>
   <img src={more} alt="" srcset="" className='img-more'/>
