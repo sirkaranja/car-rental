@@ -33,8 +33,20 @@ background: color(display-p3 0.2542 0.2021 0.1747);
 }
 
 .car-details{
-    text-align: end;
+        list-style-type: disc;
+        padding: 0;
+        margin: 0;
+        padding-left: 300px;
 }
+.car-details li {
+    margin-bottom: 10px;
+  }  
+  
+  .car-container {
+    display: flex;
+    align-items: center;
+  }
+
 .more-cars{
     height: 252px;
     
@@ -45,7 +57,13 @@ background: color(display-p3 0.2542 0.2021 0.1747);
     flex-shrink: 0;
 
     }
+.btn-book{
+   align-content: center;
+   padding-left: 200px;
+   padding-bottom: 140px;
+}
 
-.btn-group{
-    padding-bottom: 200px;
+.btn{
+    background-color: #43332B;
+    color: #ffffff;
 }
