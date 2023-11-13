@@ -34,9 +34,13 @@ function About() {
  </div>
  <div className='more-cars'>
   <img src={more} alt="" srcset="" className='img-more'/>
- </div>
- <h5>View more Categories</h5>
+  <div className='btn-group'>
+<h5>View more Categories</h5>
  <button>More cars</button>
+</div>
+
+ </div>
+ 
       </div> 
       
     <Footer />

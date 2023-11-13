@@ -41,6 +41,11 @@ background: color(display-p3 0.2542 0.2021 0.1747);
 }
 .img-more {
     width: 100%;
+    height: 252px;
+    flex-shrink: 0;
 
     }
 
+.btn-group{
+    padding-bottom: 200px;
+}
