@@ -2,6 +2,10 @@ import React from 'react';
 import Footer from '../Footer/Footer';
 import NavbarMain from '../Navbar/Navbar';
 import './contact.css';
+import fb from '../../assets/fb.png';
+import wp from '../../assets/wp.png';
+import ig from '../../assets/ig.png';
+import ytube from '../../assets/ytube.png';
 
 function Contact() {
   return (
@@ -42,6 +46,12 @@ function Contact() {
     <p>Email us at: <span className="email">info@carhire.co.ke</span></p>
     <p>Call: 0798343427</p>
     <p>Follow us on our socials</p>
+   <div className='socials'>
+   <img src={fb} alt="" srcset="" />
+    <img src={ig} alt="" srcset="" />
+    <img src={ytube} alt="" srcset="" />
+    <img src={wp} alt="" srcset="" />
+   </div>
   </div>
 </div>
 
