@@ -1,7 +1,6 @@
 .header{
     color: #FFF;
-    color: color(display-p3 1 1 1);
-    font-family: Fredoka One;
+    font-family: 'Fredoka One';
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -41,7 +40,11 @@
     border-radius: 5px;
     margin-top: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
+  button:hover {
+    background-color: #0056b3; 
+}
   .ftr{
     padding-top: 100px;
   }
