@@ -17,7 +17,7 @@ CORS(app)
 
 @app.route('/')
 def home():
-    return "<h2>Dashboard,/h2>"
+    return "<h2>Dashboard</h2>"
 
 
 app.route('/users', methods=['GET'])
@@ -116,19 +116,19 @@ def get_all_cars():
 
 #delete method for cars
 
-@app.route('/users/<int:car_id>', methods=['DELETE'])
+@app.route('/cars/<int:car_id>', methods=['DELETE'])
 def delete_car(car_id):
     try:
         car = Car.query.get(car_id)
         if not car:
             return jsonify({'error': 'Car not found'}), 404
-        
+
         db.session.delete(car)
         db.session.commit()
 
         return jsonify({'message': f"Car deleted successfully"}), 200
     except Exception as e:
-        return jsonify({'error', str(e)}), 500
+        return jsonify({'error': str(e)}), 500
 
 
 #update method for cars details
