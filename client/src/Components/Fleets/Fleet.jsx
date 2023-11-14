@@ -1,57 +1,41 @@
 import React, { useState, useEffect } from 'react';
 
-function Fleet() {
+const CarList = () => {
   const [cars, setCars] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const apiUrl = 'http://127.0.0.1:5000/cars';
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://127.0.0.1:5000/cars');
+        const data = await response.json();
+        setCars(data.cars);
+      } catch (error) {
+        console.error('Error fetching cars:', error);
+      }
+    };
 
-    fetch(apiUrl)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Network response was not ok: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setCars(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
-        setLoading(false);
-      });
+    fetchData();
   }, []);
 
   return (
     <div>
-      <h1>Car List</h1>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <ul>
-          {cars.map((car) => (
-            <li key={car.id}>
-              <h3>
-                {car.brand} - {car.model}
-              </h3>
-              <p>
-                <strong>Transition:</strong> {car.transition}
-              </p>
-              <p>
-                <strong>Seat Capacity:</strong> {car.seat_capacity}
-              </p>
-              <p>
-                <strong>Speedometer:</strong> {car.speedometer}
-              </p>
-              <img src={car.image} alt={`Image of ${car.brand} ${car.model}`} />
-            </li>
-          ))}
-        </ul>
-      )}
+      <h2>Car List</h2>
+      <div className="card-container">
+        {cars.map((car) => (
+          <div key={car.id} className='card' style={{ width: '18rem' }}>
+            <img src={car.image} alt={`${car.brand} ${car.model}`} className='img-card' />
+            <div className='card-body'>
+              <p className='card-text'>{car.brand} {car.model}</p>
+              <p className='card-text'>Transmission: {car.transition}</p>
+              <p className='card-text'>Seat Capacity: {car.seat_capacity}</p>
+              <p className='card-text'>Speedometer: {car.speedometer}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
+};
 
-export default Fleet;
+
+export default CarList;
