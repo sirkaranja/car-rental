@@ -19,23 +19,25 @@ CORS(app)
 def home():
     return "<h2>Dashboard</h2>"
 
-
-app.route('/users', methods=['GET'])
+@app.route('/users', methods=['GET'])
 def get_all_users():
     users = User.query.all()
-    users_list=[]
+    users_list = []
+
     for user in users:
         try:
-            user_data={
+            user_data = {
                 'id': user.id,
                 'name': user.name,
                 'email': user.email,
-                'role': user.role,
+                'role': user.role,  # Assuming 'role' is stored as a string in the database
             }
             users_list.append(user_data)
         except Exception as e:
-            print (f"Error processing users list {user.id}: {e}")
+            print(f"Error processing users list {user.id}: {e}")
+
     return jsonify(users_list)
+
 
 #method for adding new user
 @app.route('/users', methods=['POST'])
