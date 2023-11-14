@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './fleet.css'
 
 const CarList = () => {
   const [cars, setCars] = useState([]);
@@ -22,7 +23,7 @@ const CarList = () => {
       <h2>Car List</h2>
       <div className="card-container">
         {cars.map((car) => (
-          <div key={car.id} className='card' style={{ width: '18rem' }}>
+          <div key={car.id} className='card'>
             <img src={car.image} alt={`${car.brand} ${car.model}`} className='img-card' />
             <div className='card-body'>
               <p className='card-text'>{car.brand} {car.model}</p>
