@@ -20,7 +20,7 @@ const CarList = () => {
 
   return (
     <div>
-      <h2>Car List</h2>
+       <div className='header'>Fleets</div>
       <div className="card-container">
         {cars.map((car) => (
           <div key={car.id} className='card'>
