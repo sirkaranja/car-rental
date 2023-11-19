@@ -38,11 +38,12 @@
 .header h1{
   font-family: 'Fredoka One';
   font-weight: 400;
+  align-items: center;
 }
 
 .card-buttons{
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   margin-top: 10px;
 }
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './fleet.css'
+import frd from '../../assets/frd.png'
 
 const CarList = () => {
   const [cars, setCars] = useState([]);
@@ -26,7 +27,7 @@ const CarList = () => {
       <div className="card-container">
         {cars.map((car) => (
           <div key={car.id} className='card'>
-            <img src={car.image} alt={`${car.brand} ${car.model}`} className='img-card' />
+            <img src={frd} alt={`${car.brand} ${car.model}`} className='img-card' />
             <div className='card-body'>
               <p className='card-text'>{car.brand} {car.model}</p>
               <p className='card-text'>Transmission: {car.transition}</p>
