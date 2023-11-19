@@ -11,14 +11,53 @@
     padding: 20px;
     box-shadow:  0 4px 8px rgba(0,0,0,0.1);
     transition: box-shadow 0.3s ease-in-out;
+    height: fit-content;
 
+}
+.card-body{
+  padding: 10px;
 }
 
 .card:hover{
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
+.card-text{
+  line-height: normal;
+  font-size: small;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+}
+
 .header{
   height: 400px;
   background-color: #43332B;
+}
+
+.header h1{
+  font-family: 'Fredoka One';
+  font-weight: 400;
+}
+
+.card-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.view-details-btn, 
+.book-btn{
+  flex: 1;
+  padding: 10px;
+  margin-right: 5px;
+
+}
+.view-details-btn {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.book-btn {
+  background-color: #3498db;
+  color: #fff;
 }

@@ -20,7 +20,9 @@ const CarList = () => {
 
   return (
     <div>
-       <div className='header'>Fleets</div>
+       <div className='header'>
+        <h1> Our Fleets</h1>
+       </div>
       <div className="card-container">
         {cars.map((car) => (
           <div key={car.id} className='card'>
@@ -30,6 +32,11 @@ const CarList = () => {
               <p className='card-text'>Transmission: {car.transition}</p>
               <p className='card-text'>Seat Capacity: {car.seat_capacity}</p>
               <p className='card-text'>Speedometer: {car.speedometer}</p>
+            </div>
+            <div className='card-button'>
+              <button className='view-details-btn'>View Details</button>
+              <button className='book-btn'>Book</button>
+
             </div>
           </div>
         ))}
