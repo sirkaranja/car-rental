@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './fleet.css'
 import frd from '../../assets/frd.png'
+import Footer from '../Footer/Footer';
+import NavbaMain from '../Navbar/Navbar'
 
 const CarList = () => {
   const [cars, setCars] = useState([]);
@@ -20,10 +22,10 @@ const CarList = () => {
   }, []);
 
   return (
-    <div>
-       <div className='header'>
+    <><NavbaMain /><div>
+      <div className='header'>
         <h1> Our Fleets</h1>
-       </div>
+      </div>
       <div className="card-container">
         {cars.map((car) => (
           <div key={car.id} className='card'>
@@ -42,7 +44,7 @@ const CarList = () => {
           </div>
         ))}
       </div>
-    </div>
+    </div><Footer /></>
   );
 };
 
