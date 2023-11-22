@@ -10,11 +10,8 @@ import Footer from '../Footer/Footer';
 function Desc() {
   return (
     <>
-    < NavbaMain />
-   
-    < Coursel />
-
-    
+    < NavbaMain />  
+    < Coursel />   
     <div className='main-desc'>
       <div className='desc-img-container'>
         <img src={desc1} alt="Car" className='desc-img' />
