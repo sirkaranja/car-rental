@@ -5,15 +5,16 @@ import desc2 from '../../assets/subaru.png';
 import desc3 from '../../assets/rent.png';
 import NavbaMain from '../Navbar/Navbar'
 import Coursel from '../Coursel/coursel'
-import SearchBar from '../SearchBar/searchbar'
 import Footer from '../Footer/Footer';
 
 function Desc() {
   return (
     <>
     < NavbaMain />
+   
     < Coursel />
-    < SearchBar />
+
+    
     <div className='main-desc'>
       <div className='desc-img-container'>
         <img src={desc1} alt="Car" className='desc-img' />

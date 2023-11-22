@@ -2,7 +2,6 @@
     display: flex; 
     align-items: center; 
   }
-  
   .desc-img-container {
     flex: 1;
     padding: 20px; 
