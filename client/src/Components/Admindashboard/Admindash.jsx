@@ -1,5 +1,6 @@
 import React from 'react'
 import './Admindash.css'
+import Cour from '../DashboardCoursel/Cour'
 
 function Admindash() {
   return (
@@ -142,6 +143,7 @@ function Admindash() {
   </tbody>
 </table>
         </div>
+        < Cour />
         </div>
        
     </div>

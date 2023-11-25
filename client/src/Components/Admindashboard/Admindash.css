@@ -27,7 +27,8 @@ color: aliceblue;
 }
 .table{
     width: 25px;
-    background-color: antiquewhite;
+    background-color:#43332B;
+    border-radius: 10px;
 }
 .tbt{
     background-color: aliceblue;
