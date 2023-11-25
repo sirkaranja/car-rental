@@ -65,6 +65,83 @@ function Admindash() {
 <p>Today is September 22, 2023. You have 126 news and alerts,<br /> along with 3 messages awaiting your response.</p>
 
         </div>
+        <div className='tbt'>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Most Booked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Toyota</td>
+      <td>vitz</td>
+      
+    </tr>
+    <tr>
+    <th scope="row">2</th>
+      <td>Toyota</td>
+      <td>Mark X</td>
+    </tr>
+    <tr>
+    <th scope="row">3</th>
+      <td>Toyota</td>
+      <td>Landcruiser</td>
+    </tr>
+  </tbody>
+</table>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Customers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Toyota</td>
+      <td>vitz</td>
+      
+    </tr>
+    <tr>
+    <th scope="row">2</th>
+      <td>Toyota</td>
+      <td>Mark X</td>
+    </tr>
+    <tr>
+    <th scope="row">3</th>
+      <td>Toyota</td>
+      <td>Landcruiser</td>
+    </tr>
+  </tbody>
+</table>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Invoices</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Toyota</td>
+      <td>vitz</td>
+      
+    </tr>
+    <tr>
+    <th scope="row">2</th>
+      <td>Toyota</td>
+      <td>Mark X</td>
+    </tr>
+    <tr>
+    <th scope="row">3</th>
+      <td>Toyota</td>
+      <td>Landcruiser</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
         </div>
        
     </div>

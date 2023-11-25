@@ -3,7 +3,7 @@
 .bg{
     background: #43332B;
     background: color(display-p3 0.2542 0.2021 0.1747);
-    box-shadow: 0px -6px 16px 0px rgba(242, 240, 255, 0.60);
+    box-shadow: 0px -6px 16px 0px rgba(51, 36, 148, 0.6);
     box-shadow: 0px -6px 16px 0px color(display-p3 0.949 0.9412 1 / 0.60);
     color: aliceblue;
   }
@@ -24,4 +24,13 @@ color: aliceblue;
  p{
     color: aliceblue;
     padding-bottom: 200px;
+}
+.table{
+    width: 25px;
+    background-color: antiquewhite;
+}
+.tbt{
+    background-color: aliceblue;
+   display: flex;
+   justify-content: space-between;
 }
