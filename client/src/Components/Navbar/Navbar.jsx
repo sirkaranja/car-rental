@@ -4,12 +4,13 @@ import { Navbar, Nav, Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
+import './Navbar.css';
 
 function NavbaMain() {
     return (
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/">CarHire</Navbar.Brand>
+        <Navbar.Brand href="/"><span id='dak'>Car</span>Hire</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
