@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from '../Footer/Footer';
-import NavbaMain from '../Navbar/Navbar'
 import './about.css'
 import ford from '../../assets/frd.png'
 import more from '../../assets/more.png'
@@ -10,7 +9,6 @@ function About() {
   return (
 
     <>
-    <NavbaMain />
 
     <div className='mainpart'>
       <div className='header'>

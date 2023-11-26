@@ -1,6 +1,5 @@
 import React from 'react'
 import Footer from '../Footer/Footer';
-import NavbaMain from '../Navbar/Navbar'
 import './services.css'
 import trip from '../../assets/trip.png'
 import airport from '../../assets/air.png'
@@ -9,7 +8,6 @@ import connect from '../../assets/connect.png'
 function Services() {
   return (
     <>
-    <NavbaMain />
     <div className='header'>services</div>
  <div className='box-wrapper'>
  <div className='serv-box'>
