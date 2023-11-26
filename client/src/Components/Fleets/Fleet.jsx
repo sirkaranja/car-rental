@@ -8,7 +8,7 @@ import NavbarMain from '../Navbar/Navbar';
 const CarList = () => {
   const customStyles = {
     content: {
-      width: '50%', 
+      width: '30%', 
       margin: 'auto',
     },
   };
