@@ -9,7 +9,9 @@ import ytube from '../../assets/ytube.png';
 function Contact() {
   return (
     <>
+    
       {/* Contact form */}
+      <div className='header'>Contact Us</div>
       <div className='main-contact'>
   <form action="">
     <div className="flex-container">
@@ -37,22 +39,16 @@ function Contact() {
     <textarea id="message" cols="30" rows="10" placeholder='Your message'></textarea>
     <button type="submit">Send Message</button>
   </form>
-
-  <div className='contact-info'>
-    <h3>Contact Information</h3>
+ 
+</div>
+<div>
+<div className='cc'>
     <p>Nairobi, Kenya</p>
     <p>Email us at: <span className="email">info@carhire.co.ke</span></p>
     <p>Call: 0798343427</p>
     <p>Follow us on our socials</p>
-   <div className='socials'>
-   <img src={fb} alt="" srcset="" />
-    <img src={ig} alt="" srcset="" />
-    <img src={ytube} alt="" srcset="" />
-    <img src={wp} alt="" srcset="" />
-   </div>
   </div>
 </div>
-
       <div className='ftr'></div>
       <Footer />
     </>

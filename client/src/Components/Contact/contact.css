@@ -15,7 +15,7 @@
 
 form {
   flex: 1; 
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -35,7 +35,7 @@ textarea {
 }
 
 button {
-  background-color: #007bff;
+  background-color: #43332B;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -51,20 +51,4 @@ button:hover {
 
 .ftr {
   padding-top: 100px;
-}
-.contact-info {
-  padding-left: 500px;
-  flex: 1; 
-  margin-left: 20px; 
-}
-
-.socials{
-  size: 40px;
-  display: flex;
- width: 50px;
- height: 20px;
-}
-
-.socials img{
-  margin-right: 12px;
 }
