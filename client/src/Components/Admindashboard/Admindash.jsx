@@ -4,7 +4,7 @@ import Cour from '../DashboardCoursel/Cour'
 
 function Admindash() {
   return (
-    <div class="container-fluid">
+    <div className="container-fluid">
     <div class="row flex-nowrap">
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg">
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
@@ -59,13 +59,13 @@ function Admindash() {
             <h3>Left Sidebar with Submenus</h3>
             <form class="form-inline my-2 my-lg-0">
       < input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"></button>
     </form>
     <div className='msg'>
 <h4>Welcome back, Admin!</h4>
 <p>Today is September 22, 2023. You have 126 news and alerts,<br /> along with 3 messages awaiting your response.</p>
 
         </div>
+        <button>Add new car</button>
         <div className='tbt'>
         <table class="table">
   <thead>
