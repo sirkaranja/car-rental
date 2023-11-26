@@ -56,21 +56,22 @@ function Admindash() {
             </div>
         </div>
         <div class="col py-3">
-            <h3>Left Sidebar with Submenus</h3>
-            <form class="form-inline my-2 my-lg-0">
-      < input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <form className="form-inline  my-2 my-lg-0">
+      < input className="form-control fsg mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
     </form>
-    <div className='msg'>
+    <div className='msg-c'>
+    <div className='msg '>
 <h4>Welcome back, Admin!</h4>
 <p>Today is September 22, 2023. You have 126 news and alerts,<br /> along with 3 messages awaiting your response.</p>
 
         </div>
-        <button>Add new car</button>
+    </div>
+
         <div className='tbt'>
         <table class="table">
   <thead>
     <tr>
-      <th scope="col">Most Booked</th>
+      <th>Most Booked</th>
     </tr>
   </thead>
   <tbody>
@@ -95,7 +96,7 @@ function Admindash() {
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Customers</th>
+      <th>Customers</th>
     </tr>
   </thead>
   <tbody>
@@ -120,7 +121,7 @@ function Admindash() {
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Invoices</th>
+      <th >Invoices</th>
     </tr>
   </thead>
   <tbody>

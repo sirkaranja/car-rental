@@ -3,14 +3,12 @@ import './Desc.css';
 import desc1 from '../../assets/images1.png';
 import desc2 from '../../assets/subaru.png';
 import desc3 from '../../assets/rent.png';
-import NavbaMain from '../Navbar/Navbar'
 import Coursel from '../Coursel/coursel'
 import Footer from '../Footer/Footer';
 
 function Desc() {
   return (
     <>
-    < NavbaMain />  
     < Coursel />   
     <div className='main-desc'>
       <div className='desc-img-container'>

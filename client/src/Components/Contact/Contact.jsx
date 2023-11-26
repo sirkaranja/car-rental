@@ -1,6 +1,5 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
-import NavbarMain from '../Navbar/Navbar';
 import './contact.css';
 import fb from '../../assets/fb.png';
 import wp from '../../assets/wp.png';
@@ -10,7 +9,6 @@ import ytube from '../../assets/ytube.png';
 function Contact() {
   return (
     <>
-      <NavbarMain />
       {/* Contact form */}
       <div className='main-contact'>
   <form action="">

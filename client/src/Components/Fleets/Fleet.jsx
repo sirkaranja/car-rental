@@ -22,7 +22,7 @@ const CarList = () => {
   }, []);
 
   return (
-    <><NavbaMain /><div>
+    <><div>
       <div className='header'>
         <h1> Our Fleets</h1>
       </div>
